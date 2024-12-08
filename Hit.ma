@@ -1,6 +1,6 @@
 //Maya ASCII 2025ff03 scene
 //Name: Hit.ma
-//Last modified: Sun, Dec 01, 2024 04:30:19 PM
+//Last modified: Mon, Dec 02, 2024 08:42:15 PM
 //Codeset: 1252
 file -rdi 1 -ns "Ultimate_Beefy_v1_0_2" -rfn "Ultimate_Beefy_v1_0_2RN" -op "v=0;"
 		 -typ "mayaAscii" "D:/Documents/School/UVU/DAGV 2330/DAGV_2330_Fall_2024/Ultimate_Beefy_v1.0.2.ma";
@@ -14,17 +14,17 @@ fileInfo "product" "Maya 2025";
 fileInfo "version" "2025";
 fileInfo "cutIdentifier" "202409190603-cbdc5a7e54";
 fileInfo "osv" "Windows 10 Home v2009 (Build: 19045)";
-fileInfo "UUID" "55BE1334-4EFD-AB6E-BC75-B89E1C3A07AB";
+fileInfo "UUID" "AEFFDAF0-4AE5-E75E-B8B2-C887875F33C3";
 createNode transform -s -n "persp";
 	rename -uid "650288D0-4C29-F182-042E-9287C4ED7299";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" -18.95025638208606 9.6054579452488387 39.611302677342863 ;
-	setAttr ".r" -type "double3" -7.5383527294222876 -29.799999999999265 4.5815298781422096e-16 ;
+	setAttr ".t" -type "double3" -16.567916061802666 4.1544955882653305 25.37214891853899 ;
+	setAttr ".r" -type "double3" -2.1383527294222904 -38.599999999999255 -1.2717815758314423e-16 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "12A63C14-4C15-509A-B9DC-5D83F753E32C";
 	setAttr -k off ".v" no;
 	setAttr ".fl" 34.999999999999993;
-	setAttr ".coi" 40.73149113642566;
+	setAttr ".coi" 27.266633501708149;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
@@ -78,21 +78,21 @@ createNode camera -s -n "sideShape" -p "side";
 	setAttr ".hc" -type "string" "viewSet -s %camera";
 	setAttr ".o" yes;
 createNode lightLinker -s -n "lightLinker1";
-	rename -uid "DCAB982A-440D-5BE1-461B-D3BD8BA07F4F";
+	rename -uid "6FF25283-44E3-7E64-DEF7-68AB204E340D";
 	setAttr -s 4 ".lnk";
 	setAttr -s 4 ".slnk";
 createNode shapeEditorManager -n "shapeEditorManager";
-	rename -uid "E4BC48A2-4BD4-9C7D-64A5-E39FD2374B8C";
+	rename -uid "3227D972-4EB7-D552-64E4-F2A98890A028";
 	setAttr ".bsdt[0].bscd" -type "Int32Array" 1 0 ;
 createNode poseInterpolatorManager -n "poseInterpolatorManager";
-	rename -uid "837BC04E-48FE-2D6C-FEAD-16BA7EDD69FC";
+	rename -uid "240F02CA-4848-7198-9711-709AE48546F2";
 createNode displayLayerManager -n "layerManager";
-	rename -uid "23D42211-4485-7968-19AB-25BEA78C7CD5";
+	rename -uid "A58B26EB-458D-8572-48C1-A2A453347A5C";
 createNode displayLayer -n "defaultLayer";
 	rename -uid "4D9D09F9-48D9-C43A-1FB1-A59887CB6A35";
 	setAttr ".ufem" -type "stringArray" 0  ;
 createNode renderLayerManager -n "renderLayerManager";
-	rename -uid "C81545D0-44C8-09ED-1160-779CEE386AE2";
+	rename -uid "6774613D-48BD-A10E-6631-C186F9AFCB0B";
 createNode renderLayer -n "defaultRenderLayer";
 	rename -uid "12217463-4A0B-3090-7782-B7AE262F9FE1";
 	setAttr ".g" yes;
@@ -142,7 +142,7 @@ createNode script -n "uiConfigurationScriptNode";
 	setAttr ".st" 3;
 createNode script -n "sceneConfigurationScriptNode";
 	rename -uid "8E08A4CE-49B8-569A-B9F6-819B62ED4B3B";
-	setAttr ".b" -type "string" "playbackOptions -min 1 -max 56 -ast 1 -aet 200 ";
+	setAttr ".b" -type "string" "playbackOptions -min 1 -max 60 -ast 1 -aet 200 ";
 	setAttr ".st" 6;
 createNode reference -n "Ultimate_Beefy_v1_0_2RN";
 	rename -uid "AF8F9130-4850-95BF-3049-638A7741667E";
@@ -349,7 +349,7 @@ createNode reference -n "Ultimate_Beefy_v1_0_2RN";
 	setAttr ".ed" -type "dataReferenceEdits" 
 		"Ultimate_Beefy_v1_0_2RN"
 		"Ultimate_Beefy_v1_0_2RN" 0
-		"Ultimate_Beefy_v1_0_2RN" 227
+		"Ultimate_Beefy_v1_0_2RN" 225
 		2 "|Ultimate_Beefy_v1_0_2:Beefy|Ultimate_Beefy_v1_0_2:Beefy_MainC|Ultimate_Beefy_v1_0_2:Beefy_ROOTCG|Ultimate_Beefy_v1_0_2:Beefy_ROOTC" 
 		"rotatePivotTranslate" " -type \"double3\" 0 0 0"
 		2 "|Ultimate_Beefy_v1_0_2:Beefy|Ultimate_Beefy_v1_0_2:Beefy_MainC|Ultimate_Beefy_v1_0_2:Beefy_MainHipCG|Ultimate_Beefy_v1_0_2:Beefy_MainHipC" 
@@ -362,14 +362,10 @@ createNode reference -n "Ultimate_Beefy_v1_0_2RN";
 		"rotatePivotTranslate" " -type \"double3\" 0 0 0"
 		2 "|Ultimate_Beefy_v1_0_2:Beefy|Ultimate_Beefy_v1_0_2:Beefy_MainC|Ultimate_Beefy_v1_0_2:Beefy_HeadCG2|Ultimate_Beefy_v1_0_2:Beefy_HeadCG|Ultimate_Beefy_v1_0_2:Beefy_HeadC" 
 		"rotatePivotTranslate" " -type \"double3\" 0 0 0"
-		2 "|Ultimate_Beefy_v1_0_2:Beefy|Ultimate_Beefy_v1_0_2:Beefy_MainC|Ultimate_Beefy_v1_0_2:Beefy_HeadCG2|Ultimate_Beefy_v1_0_2:Beefy_HeadCG|Ultimate_Beefy_v1_0_2:Beefy_HeadC" 
-		"HeadOrient" " -k 1"
 		2 "|Ultimate_Beefy_v1_0_2:Beefy|Ultimate_Beefy_v1_0_2:Beefy_MainC|Ultimate_Beefy_v1_0_2:Beefy_lFootIKCG|Ultimate_Beefy_v1_0_2:Beefy_lFootIKC" 
 		"rotatePivotTranslate" " -type \"double3\" 0 0 0"
 		2 "|Ultimate_Beefy_v1_0_2:Beefy|Ultimate_Beefy_v1_0_2:Beefy_MainC|Ultimate_Beefy_v1_0_2:Beefy_lWristIKCG|Ultimate_Beefy_v1_0_2:Beefy_lWristIKC" 
 		"rotatePivotTranslate" " -type \"double3\" 0 0 0"
-		2 "|Ultimate_Beefy_v1_0_2:Beefy|Ultimate_Beefy_v1_0_2:Beefy_MainC|Ultimate_Beefy_v1_0_2:Beefy_lWristIKCG|Ultimate_Beefy_v1_0_2:Beefy_lWristIKC" 
-		"Hips" " -k 1"
 		2 "|Ultimate_Beefy_v1_0_2:Beefy|Ultimate_Beefy_v1_0_2:Beefy_MainC|Ultimate_Beefy_v1_0_2:Beefy_lClavicleCG|Ultimate_Beefy_v1_0_2:Beefy_lClavicleC" 
 		"rotatePivotTranslate" " -type \"double3\" 0 0 0"
 		2 "|Ultimate_Beefy_v1_0_2:Beefy|Ultimate_Beefy_v1_0_2:Beefy_MainC|Ultimate_Beefy_v1_0_2:Beefy_lWristJG2|Ultimate_Beefy_v1_0_2:Beefy_lWristJG1|Ultimate_Beefy_v1_0_2:Beefy_lThumbJ1CG|Ultimate_Beefy_v1_0_2:Beefy_lThumbJ1C" 
@@ -2010,8 +2006,8 @@ createNode animCurveTU -n "Beefy_rWristIKC_ControlScale";
 	setAttr ".wgt" no;
 	setAttr -s 7 ".ktv[0:6]"  1 1 25 1 29 1 30 1 32 1 34 1 35 1;
 select -ne :time1;
-	setAttr ".o" 13;
-	setAttr ".unw" 13;
+	setAttr ".o" 60;
+	setAttr ".unw" 60;
 select -ne :hardwareRenderingGlobals;
 	setAttr ".otfna" -type "stringArray" 22 "NURBS Curves" "NURBS Surfaces" "Polygons" "Subdiv Surface" "Particles" "Particle Instance" "Fluids" "Strokes" "Image Planes" "UI" "Lights" "Cameras" "Locators" "Joints" "IK Handles" "Deformers" "Motion Trails" "Components" "Hair Systems" "Follicles" "Misc. UI" "Ornaments"  ;
 	setAttr ".otfva" -type "Int32Array" 22 0 1 1 1 1 1
